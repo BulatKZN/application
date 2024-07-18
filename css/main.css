@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* @font-face {
+    font-family: ;
+    src: url();
+} */
+
+:root {
+    --size-title: 48px;
+    --font-title: "Roboto", sans-serif;
+    --font-weight-title: 400;
+    --color-title: #4C4C4C;
+}
+
+.application {
+    background-color: brown;
+    padding-top: 57px;
+}
+
+.container {
+    max-width: 870px;
+    margin: 0 auto;
+}
+
+.city {
+    display: flex;
+}
+
+.city_name {
+    color: var(--color-title);
+    font-size: var(--size-title);
+    font-weight: 500;
+    margin-right: 28px;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-title);
+}
+
+.active_name {
+    color: #fff;
+}
