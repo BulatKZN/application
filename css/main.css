@@ -11,14 +11,21 @@
 
 :root {
     --size-title: 48px;
-    --font-title: "Roboto", sans-serif;
-    --font-weight-title: 400;
+    --size-subtitle: 14px;
+    --size-text: 10px;
+    --font-roboto: "Roboto", sans-serif;
+    --font-inter: "Inter", sans-serif;
+    --font-weight-normal: 400;
     --color-title: #4C4C4C;
+    --color-white: #fff;
+    --color-grey: #808080;
+
 }
 
 .application {
     background-color: brown;
     padding-top: 57px;
+
 }
 
 .container {
@@ -28,6 +35,7 @@
 
 .city {
     display: flex;
+    margin-bottom: 27px;
 }
 
 .city_name {
@@ -35,10 +43,101 @@
     font-size: var(--size-title);
     font-weight: 500;
     margin-right: 28px;
-    font-family: var(--font-title);
-    font-weight: var(--font-weight-title);
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-normal);
 }
 
 .active_name {
-    color: #fff;
+    color: var(--color-white);
+}
+
+.weather {
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    margin-bottom: 55px;
+}
+
+.weather_icon {
+    margin-right: 9px;
+}
+
+.temperature {
+    font-family: var(--font-roboto);
+    font-size: 22px;
+    font-weight: var(--font-weight-normal);
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+}
+
+.card {
+    background-color: #21212D;
+    padding: 25px;
+    max-width: 422px;
+    border-radius: 20px;
+
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.location-text {
+    font-family: var(--font-inter);
+    color: var(--color-white);
+    font-size: var(--size-subtitle);
+    margin-right: 18px;
+    font-weight: var(--font-weight-normal);
+}
+
+.location-amount-place {
+    font-family: var(--font-inter);
+    color: var(--color-grey);
+    font-size: var(--size-text);
+    font-weight: var(--font-weight-normal);
+}
+
+.basic_photo {
+    margin-bottom: 16px;
+}
+
+.card_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.viewing {
+    display: flex;
+    align-items: center;
+}
+
+.viewing_icon {
+    margin-right: 10px;
+}
+
+.viewing_quantity {
+    font-family: var(--font-inter);
+    color: var(--color-grey);
+    font-size: var(--size-text);
+    font-weight: var(--font-weight-normal);
+}
+
+.save {
+    display: flex;
+    align-items: center;
+}
+
+
+.save-text {
+    font-family: var(--font-inter);
+    color: var(--color-grey);
+    font-size: var(--size-text);
+    font-weight: var(--font-weight-normal);
+    margin-right: 10px;
 }
