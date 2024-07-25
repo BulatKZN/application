@@ -4,10 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/app.js" defer></script>
     <title>Application</title>
@@ -17,86 +13,107 @@
     <header class="application">
         <div class="container">
             <div class="city">
-                <h1 class="city_name active_name">Kazan</h1>
-                <h1 class="city_name">Saint-Peterburg</h1>
+                <a class="city-name active-name">Kazan</a>
+                <a class="city-name">Saint-Peterburg</a>
             </div>
             <div class="weather">
-                <img class="weather_icon" src="./img/wb_sunny.png" alt="sunny">
+                <div class="weather-icon"></div>
                 <div class="temperature">+31</div>
             </div>
             <div class="wrapper">
-                <div class="card">
-                    <div class="location">
-                        <div class="location-text">Топ 7 идей для свидания</div>
-                        <div class="location-amount-place">18 мест</div>
-                    </div>
-                    <p class="description"></p>
-                    <img class="basic_photo" src="./img/Group 307.png" alt="Photo-location">
-                    <div class="card_info">
-                        <div class="viewing">
-                            <img class="viewing_icon" src="./img/fluent_eye-12-filled (1).png" alt="">
-                            <div class="viewing_quantity">102 просмотра</div>
+                <div class="left">
+                    <a class="card card-left">
+                        <div class="card-header">
+                            <div class="card-header-title">Топ 7 идей для свидания</div>
+                            <div class="card-header-subtitle">18 мест</div>
                         </div>
-                        <div class="save">
-                            <div class="save-text">Сохранить</div>
-                            <img class="save_icon" src="./img/favorite_border.png" alt="">
+                        <p class="description">Насладиться красотой природы, ощутить романтику и провести время в
+                            приятной
+                            атмосфере. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati pariatur id
+                            omnis. Atque tempora beatae corrupti earum maiores inventore provident autem, perspiciatis
+                            eaque eos? Asperiores nostrum tempore rerum magni magnam.
+                            Nesciunt nulla eos debitis consequatur ipsa facilis a explicabo commodi tempore beatae
+                            omnis, aperiam nihil distinctio numquam vel labore exercitationem nam repudiandae officiis
+                            dolorum quia harum id? Esse, corporis dignissimos!
+                        </p>
+                        <img class="basic-photo" src="./img/card-photo.png" alt="Photo-location">
+                        <div class="card-footer">
+                            <div class="viewing">
+                                <div class="viewing-icon"></div>
+                                <div class="viewing-quantity">102 просмотра</div>
+                            </div>
+                            <div class="save">
+                                <button class="save-text">Сохранить</button>
+                                <div class="save-icon"></div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
+                    <a class=" card card-left">
+                        <div class="card-header">
+                            <div class="card-header-title">Топ 7 идей для свидания</div>
+                            <div class="card-header-subtitle">18 мест</div>
+                        </div>
+                        <p class="description">Насладиться красотой природы, ощутить романтику и провести время в
+                            приятной
+                            атмосфере. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti a mollitia
+                            atque veniam voluptatum iusto eos, rerum provident eum, nesciunt saepe, necessitatibus
+                            fugiat officia fugit quis. Nostrum officia nulla tempora!</p>
+                        <img class="basic-photo" src="./img/card-photo.png" alt="Photo-location">
+                        <div class="card-footer">
+                            <div class="viewing">
+                                <div class="viewing-icon"></div>
+                                <div class="viewing-quantity">102 просмотра</div>
+                            </div>
+                            <div class="save">
+                                <button class="save-text">Сохранить</button>
+                                <div class="save-icon"></div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="card">
-                    <div class="location">
-                        <div class="location-text">Топ 7 идей для свидания</div>
-                        <div class="location-amount-place">18 мест</div>
-                    </div>
-                    <p class="description"></p>
-                    <img class="basic_photo" src="./img/Group 307.png" alt="Photo-location">
-                    <div class="card_info">
-                        <div class="viewing">
-                            <img class="viewing_icon" src="./img/fluent_eye-12-filled (1).png" alt="">
-                            <div class="viewing_quantity">102 просмотра</div>
+                <div class="right">
+                    <a class="card card-right">
+                        <div class="card-header">
+                            <div class="card-header-title">Топ 7 идей для свидания</div>
+                            <div class="card-header-subtitle">18 мест</div>
                         </div>
-                        <div class="save">
-                            <div class="save-text">Сохранить</div>
-                            <img class="save_icon" src="./img/favorite_border.png" alt="">
+                        <p class="description">Насладиться красотой природы, ощутить романтику и провести время в
+                            приятной
+                            атмосфере.</p>
+                        <img class="basic-photo" src="./img/card-photo.png" alt="Photo-location">
+                        <div class="card-footer">
+                            <div class="viewing">
+                                <div class="viewing-icon"></div>
+                                <div class="viewing-quantity">102 просмотра</div>
+                            </div>
+                            <div class="save">
+                                <button class="save-text">Сохранить</button>
+                                <div class="save-icon"></div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
+                    <a class="card card-right">
+                        <div class="card-header">
+                            <div class="card-header-title">Топ 7 идей для свидания</div>
+                            <div class="card-header-subtitle">18 мест</div>
+                        </div>
+                        <p class="description">Насладиться красотой природы, ощутить романтику и провести время в
+                            приятной
+                            атмосфере.</p>
+                        <img class="basic-photo" src="./img/card-photo.png" alt="Photo-location">
+                        <div class="card-footer">
+                            <div class="viewing">
+                                <div class="viewing-icon"></div>
+                                <div class="viewing-quantity">102 просмотра</div>
+                            </div>
+                            <div class="save">
+                                <button class="save-text">Сохранить</button>
+                                <div class="save-icon"></div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="card">
-                    <div class="location">
-                        <div class="location-text">Топ 7 идей для свидания</div>
-                        <div class="location-amount-place">18 мест</div>
-                    </div>
-                    <p class="description"></p>
-                    <img class="basic_photo" src="./img/Group 307.png" alt="Photo-location">
-                    <div class="card_info">
-                        <div class="viewing">
-                            <img class="viewing_icon" src="./img/fluent_eye-12-filled (1).png" alt="">
-                            <div class="viewing_quantity">102 просмотра</div>
-                        </div>
-                        <div class="save">
-                            <div class="save-text">Сохранить</div>
-                            <img class="save_icon" src="./img/favorite_border.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="location">
-                        <div class="location-text">Топ 7 идей для свидания</div>
-                        <div class="location-amount-place">18 мест</div>
-                    </div>
-                    <p class="description"></p>
-                    <img class="basic_photo" src="./img/Group 307.png" alt="Photo-location">
-                    <div class="card_info">
-                        <div class="viewing">
-                            <img class="viewing_icon" src="./img/fluent_eye-12-filled (1).png" alt="">
-                            <div class="viewing_quantity">102 просмотра</div>
-                        </div>
-                        <div class="save">
-                            <div class="save-text">Сохранить</div>
-                            <img class="save_icon" src="./img/favorite_border.png" alt="">
-                        </div>
-                    </div>
-                </div>
+
             </div>
 
         </div>
