@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 @font-face {
     font-family: "Roboto";
     src: url(../font-family/Roboto/Roboto-Regular.ttf);
@@ -14,12 +18,18 @@
     src: url(../font-family/Inter/static/Inter-Regular.ttf);
 }
 
+@font-face {
+    font-family: "SFProText";
+    src: url(../font-family/SFProText/SFProText-Regular.ttf);
+}
+
 :root {
     --size-title: 48px;
     --size-subtitle: 14px;
     --size-text: 10px;
     --font-roboto: "Roboto", sans-serif;
     --font-inter: "Inter", sans-serif;
+    --font-sfprotext: "SFProText", sans-serif;
     --font-weight-normal: 400;
     --color-title: #4C4C4C;
     --color-white: #fff;
@@ -43,6 +53,7 @@
 .city {
     display: flex;
     margin-bottom: 27px;
+    margin-left: 25px;
 }
 
 .city-name {
@@ -52,6 +63,7 @@
     margin-right: 28px;
     font-family: var(--font-roboto);
     font-weight: var(--font-weight-normal);
+    outline: none;
 }
 
 .active-name {
@@ -63,6 +75,7 @@
     align-items: center;
     color: var(--color-white);
     margin-bottom: 55px;
+    margin-left: 25px;
 }
 
 .weather-icon {
@@ -79,15 +92,11 @@
     font-weight: var(--font-weight-normal);
 }
 
-.wrapper {
+.selection-list {
     display: flex;
 }
 
-.left {
-    margin-right: 13px;
-}
-
-.right {
+.selection-list-right {
     margin-top: 73px;
 }
 
@@ -97,14 +106,14 @@
     padding: 25px;
     max-width: 422px;
     border-radius: var(--border-radius);
-    margin: 26px;
+    margin-bottom: 26px;
 }
 
-.card-left {
+.selection-list-left .card {
     margin-right: 13px;
 }
 
-.card-right {
+.selection-list-right .card {
     margin-left: 13px;
 }
 
@@ -130,14 +139,16 @@
 }
 
 .description {
+    font-family: var(--font-sfprotext);
     margin-bottom: 12px;
     color: var(--color-description);
     font-weight: var(--font-weight-normal);
     font-size: 12px;
+    line-height: 18px;
 
 }
 
-.basic-photo {
+.card-basic-photo {
     width: 372px;
     margin-bottom: 16px;
     border-radius: var(--border-radius);
@@ -167,11 +178,18 @@
     font-weight: var(--font-weight-normal);
 }
 
-.save {
+.card-save {
     display: flex;
     align-items: center;
 }
 
+.save-btn {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
 
 .save-text {
     font-family: var(--font-inter);
@@ -181,7 +199,8 @@
     margin-right: 10px;
     background-color: transparent;
     border: none;
-    cursor: pointer;
+
+
 }
 
 .save-icon {
