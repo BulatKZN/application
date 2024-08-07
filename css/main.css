@@ -43,6 +43,12 @@ a {
     background-color: #131521;
     padding-top: 57px;
 
+
+}
+
+.application-base {
+    padding-top: 27px;
+    background-color: #131521;
 }
 
 .container {
@@ -52,7 +58,6 @@ a {
 
 .city {
     display: flex;
-    margin-bottom: 27px;
     margin-left: 25px;
 }
 
